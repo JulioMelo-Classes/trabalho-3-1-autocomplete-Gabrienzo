@@ -1,19 +1,19 @@
 #include "../include/bancodd.h"
 #include <iostream>
+#include <sstream>
 
 std::string BancoDeDados::ler_dados(std::string nomeArq){
   std::ifstream arq;
-  std::string linha, palavra;
-  std::string::size_type sz;
+  std::string linha, palavra, ss2;
   int numero;
 
   arq.open(nomeArq, std::ios::in);
-  while (! arq.eof()){
-    std::getline(arq, linha);
-    //testar se pegou a linha
-    std::cout << linha << std::endl;
-    numero = std::stoi(linha,&sz);
-    palavra = linha.substr(sz+1);
+  while (std::getline(std::cin, linha)){
+    std::stringstream ss2;
+    ss2 << linha;
+    ss2 >> numero;
+    ss2 >> palavra;
+
     palavras.push_back(make_pair(numero,palavra));
   }
   arq.close();

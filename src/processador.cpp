@@ -17,14 +17,14 @@ std::string linha, saida;
   menu.start();
 
   //leitor da linha
-	/*while (! this->sair){
+	while (! this->sair){
     menu.start();
 		if (std::getline(inputStream, linha)) {
-			saida = processarLinha(linha);
+			saida = linha;
 			outputStream << saida << std::endl;
 		}
   }
-  */
+  
 }
 
 /*std::string Processador::processarLinha(std::string linha){
