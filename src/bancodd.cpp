@@ -8,8 +8,9 @@ std::string BancoDeDados::ler_dados(std::string nomeArq){
   int numero;
 
   arq.open(nomeArq, std::ios::in);
-  while (std::getline(std::cin, linha)){
-    std::stringstream ss2;
+  //while (std::getline(std::cin, linha)){
+  while (std::getline(arq, linha)){ //aqui tem que usar o arquivo e não o std::cin
+    std::stringstream ss2; // a leitura ainda está errada, de acordo com o formato
     ss2 << linha;
     ss2 >> numero;
     ss2 >> palavra;

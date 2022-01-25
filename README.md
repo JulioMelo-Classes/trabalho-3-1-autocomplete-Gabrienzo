@@ -94,6 +94,25 @@ Neste segundo exemplo, a base de dados é `wiktionary.txt` e a string buscada fo
 
 Note que o programa não deve ser **case sensitive**. Ou seja, não deve fazer diferença se o usuário digita "São P", "são p", "SÃO P",  ou qualquer variação de maiúscula ou minúscula. A entrada do usuário deve ser convertida para um case qualquer (todas maiúsculas ou todas minúsculas), para facilitar a operação de busca na base de dados.
 
+# Feedback Checkin 1
+
+1. Projete ao menos as 3 classes principais propostas para o programa. Não precisa implementar, apenas os .h são suficientes. **75%**
+    - Não entendi o motivo da classe "processador", vocês não precisavam passar o stdin/out para qualquer classe, a ideia é que a saida e entrada sejam processadas dentro dos méotodos
+    da classe interface de alguma forma. Faltou também uma classe para "Guardar o Resultado" da busca no banco.
+
+2. Implemente a classe responsável por ler e armazenar as informações do banco de dados de entrada. **35%**
+    - Acho que vocês entenderam errado a forma de ler o arquivo, ou fizeram usando o operador de redirecionamento. De qualquer maneira corrigi lá para a forma correta para ler o arquivo
+    porém a lógica ainda está errada de acordo com o formato dos arquivos especificados.
+   
+3. Escreva o main instanciando a do item 2 mostrando que ela funciona para carregar e armazenar as informações. **50%**
+    - Vcs chegaram a fazer este quesito mas o funcionamento não está correto.
+
+4. Escreva parte da classe responsável pela interface com o usuário, de forma que o usuário consiga ao menos digitar a alguma palavra no loop principa, mostrando uma interface similar à interface sugerida na atividade 3.1. **ok**
+    - Blz, a interface também poderia ser responsável pela leitura de dados.
+
+5. Use a classe implementada em 4 no main, para mostrar que ela funciona. Não precisa realizar qualquer busca no banco, se a entrada do usuário estiver sendo recebida e impressa no terminal já conta para esse checkin. **ok**
+    - Ok
+
 # Autorship
 
 The description of this programming assignment was taken from [Computer Sciecne at Pricenton University](http://introcs.cs.princeton.edu/java/assignments/autocomplete.html).
