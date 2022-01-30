@@ -15,9 +15,17 @@ string
 -
 fstream
 -
+sstream
+-
+string.h
+-
+stdlib.h
+-
 
 /home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/include/interface.h
 iostream
+-
+vector
 -
 
 /home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/include/processador.h
@@ -29,8 +37,6 @@ ostream
 -
 sstream
 -
-vector
--
 string
 -
 interface.h
@@ -41,10 +47,18 @@ bancodd.h
 /home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/src/bancodd.cpp
 ../include/bancodd.h
 /home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/include/bancodd.h
+string
+-
+
+/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/src/completer.cpp
+../include/processador.h
+/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/include/processador.h
 iostream
 -
-sstream
--
+
+/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/src/interface.cpp
+../include/interface.h
+/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/include/interface.h
 
 /home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/src/processador.cpp
 ../include/processador.h
