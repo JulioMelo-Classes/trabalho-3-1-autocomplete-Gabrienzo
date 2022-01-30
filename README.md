@@ -39,7 +39,7 @@ fique a vontade para altera-lo para usar outros repositorios ou testar com outra
 ***
   
 ## Como executar o conjunto dos testes planejados por você (ou grupo).
-Deixamos alguns comandos basicos prefeitos em [script_comandos.txt](/data/script_comandos.txt)
+Deixamos alguns comandos basicos prefeitos em [script_de_teste.txt](/data/script_de_teste.txt)
 
 para executa-los basta iniciar o programa desta forma:
 ```console
