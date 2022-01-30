@@ -5,29 +5,34 @@
 #include <sstream>
 #include <queue>
 
-void Processador::iniciar(std::istream &inputStream, std::ostream &outputStream) {
-std::string linha, saida;
-	this->sair = false;
+
+void Processador::carregar_bancodd(char *nomeArq[], int numArqs){
+  int ordem;
+  std::string saida;
+
+  //setar ordenação
+  menu.setOrdem(*nomeArq[1]);
 
   //carregar banco de dados
-  saida = banco.ler_dados("cities.txt");
-  outputStream << saida << std::endl;
-  saida = banco.ler_dados("wiktionary.txt");
-  outputStream << saida << std::endl;
-  menu.start();
+  for(int i=2;i<numArqs;i++){
+    std::string nome = nomeArq[i];
+    saida = banco.ler_dados(nome);
+    std::cout << saida << std::endl;
+  }
+}
+
+void Processador::iniciar(std::istream &inputStream, std::ostream &outputStream) {
+  std::string linha, saida;
+  int ordem;
+  std::vector<std::pair<long,std::string>> resultados;
+	this->sair = false;
 
   //leitor da linha
-	while (! this->sair){
+	while (std::cin){
     menu.start();
 		if (std::getline(inputStream, linha)) {
-			saida = linha;
-			outputStream << saida << std::endl;
+      resultados = banco.procurar(linha);
+			menu.imprimir(resultados);
 		}
   }
-  
 }
-
-/*std::string Processador::processarLinha(std::string linha){
-
-}
-*/

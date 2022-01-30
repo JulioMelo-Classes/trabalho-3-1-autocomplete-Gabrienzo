@@ -5,7 +5,6 @@
 #include <istream>
 #include <ostream>
 #include <sstream>
-#include <vector>
 #include <string>
 
 #include "interface.h"
@@ -19,6 +18,8 @@ class Processador {
     bool sair = false;
 
   public:
+
+    void carregar_bancodd(char *nomeArq[], int numArqs);
 
     void iniciar(std::istream &in, std::ostream &out);
 
