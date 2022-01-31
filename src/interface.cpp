@@ -17,6 +17,10 @@ void Interface::setOrdem(char num){
   }
 }
 
+void Interface::bancoddmsg(){
+  std::cout << "Arquivo lido com sucesso!" << std::endl;
+}
+
 void Interface::imprimir(std::vector<std::pair<long,std::string>> resultados){
   std::vector<std::string> ordenado;
 

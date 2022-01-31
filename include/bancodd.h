@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 
-
+// Bancodd concentra todas as operações realizacadas a partir do banco de dados de palavras
 class BancoDeDados {
 
   private:
@@ -17,10 +17,15 @@ class BancoDeDados {
 
   public:
 
-    void setOrd(char num);
+    /*! Realiza o carregamento das palavras que está dentro do arquivo e as formata colocando-as dentro do vetor de palavras
+      @param nomeArq nome do arquivo que será carregado e lido
+    */
+    void ler_dados(std::string nomeArq);
 
-    std::string ler_dados(std::string nomeArq);
-
+    /*! Realiza a procura das palavras que complementam a palavra digitada pelo usuário
+      @param palavra que será pesquisada no banco de dados
+      @return retorna um vector de palavras que complementam a palavra de busca
+    */
     std::vector<std::pair<long,std::string>> procurar(std::string palavra);
     
 };

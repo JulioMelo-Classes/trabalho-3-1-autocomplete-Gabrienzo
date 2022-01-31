@@ -3,7 +3,7 @@
 
 using namespace std;
 
-std::string BancoDeDados::ler_dados(std::string nomeArq){
+void BancoDeDados::ler_dados(std::string nomeArq){
   fstream arq;
   string linha, palavra;
   long numero;
@@ -17,11 +17,10 @@ std::string BancoDeDados::ler_dados(std::string nomeArq){
   while (getline(arq, linha)){
     numero = std::stol(linha,&sz);
     palavra=linha.substr(sz+1);
-    palavras.push_back(make_pair(numero,palavra));
+    palavras.push_back(make_pair(numero, palavra));
+    //palavras.push_back(make_pair(numero,palavra));
   }
   arq.close();
-
-  return "Arquivo lido com sucesso!";
 
 }
 

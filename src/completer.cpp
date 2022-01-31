@@ -9,5 +9,7 @@ int main(int argc, char* argv[]) {
 
   processador.iniciar(std::cin, std::cout);
 
+  processador.deletarBanco();
+
   return 0;
 } 

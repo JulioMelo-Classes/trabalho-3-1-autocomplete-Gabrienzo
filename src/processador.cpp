@@ -9,15 +9,15 @@
 void Processador::carregar_bancodd(char *nomeArq[], int numArqs){
   int ordem;
   std::string saida;
-
+  
   //setar ordenação
   menu.setOrdem(*nomeArq[1]);
 
   //carregar banco de dados
   for(int i=2;i<numArqs;i++){
     std::string nome = nomeArq[i];
-    saida = banco.ler_dados(nome);
-    std::cout << saida << std::endl;
+    banco->ler_dados(nome);
+    menu.bancoddmsg();
   }
 }
 
@@ -31,8 +31,15 @@ void Processador::iniciar(std::istream &inputStream, std::ostream &outputStream)
 	while (std::cin){
     menu.start();
 		if (std::getline(inputStream, linha)) {
-      resultados = banco.procurar(linha);
+      resultados = banco->procurar(linha);
 			menu.imprimir(resultados);
 		}
   }
+
+  menu.close();
+  
+}
+
+void Processador::deletarBanco(){
+  delete banco;
 }
