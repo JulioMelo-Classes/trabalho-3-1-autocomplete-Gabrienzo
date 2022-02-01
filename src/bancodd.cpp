@@ -18,7 +18,6 @@ void BancoDeDados::ler_dados(std::string nomeArq){
     numero = std::stol(linha,&sz);
     palavra=linha.substr(sz+1);
     palavras.push_back(make_pair(numero, palavra));
-    //palavras.push_back(make_pair(numero,palavra));
   }
   arq.close();
 

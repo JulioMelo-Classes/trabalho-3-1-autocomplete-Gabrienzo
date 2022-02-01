@@ -7,8 +7,6 @@
 
 
 void Processador::carregar_bancodd(char *nomeArq[], int numArqs){
-  int ordem;
-  std::string saida;
   
   //setar ordenação
   menu.setOrdem(*nomeArq[1]);
