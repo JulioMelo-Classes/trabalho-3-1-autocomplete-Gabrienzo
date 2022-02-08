@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/completer.dir/src/completer.cpp.o CMakeFiles/completer.dir/src/processador.cpp.o CMakeFiles/completer.dir/src/interface.cpp.o CMakeFiles/completer.dir/src/bancodd.cpp.o  -o completer 

@@ -46,6 +46,41 @@ para executa-los basta iniciar o programa desta forma:
 cd build
 ./completer <1 ou 0> teste.txt < ../data/script_de_teste.txt
 ```
+
 ## Limitações ou funcionalidades não implementadas no programa.
 
 ### 1. Limitação: Não foi utilizado uma busca binária para encontrar os complementos para a palavra pesquisada.
+
+# Avaliação
+
+## Ler e validar os argumentos da linha de comando | 0 / 10
+
+- Voces não fizeram qualquer validação, alguns erros que eu esperava tratamento: quantidade de argumentos da linha de comando, arquivo inexistente, arquivo inválido.
+
+## Ler os dados da base de dados e armazená-los em uma classe apropriada | 10 / 10
+
+- Vou considerar, mas o método "procurar" não deveria retornar um container, como já discutimos.
+
+## Separar a interface textual das demais classes do sistema concentrando os couts e cins em um único objeto | 10 / 10
+
+- ok
+
+## Implementação de uma classe para conter o resultado da requisição do usuário | 0 / 10
+
+- Acho que vocês não chegaram a entender o motivo desta classe. Espero que tenha ficado claro na aula.
+
+## Implementação eficiente através de referencias e algoritmos de busca binária | 3 / 10
+
+- Embora vocês não tenham implementado busca binária vou dar alguns pontos pelo uso de referencias à clase "BancoDeDados".
+
+## Organização do código em src, include, data | 5 / 5
+
+- ok
+
+## Documentação do código usando o padrão doxygen | 5 / 5 
+
+- ok
+
+## Implementação e documentação de arquivos de teste | 8 / 10
+
+- Boa ideia deixar alguns comandos no arquivo de teste, aqui faltou apenas a saida esperada dos testes.

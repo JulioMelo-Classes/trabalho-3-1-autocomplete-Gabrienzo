@@ -1,3 +1,0 @@
-/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/build/CMakeFiles/rebuild_cache.dir
-/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/build/CMakeFiles/edit_cache.dir
-/home/gabrienzo/atvd1/trabalho-3-1-autocomplete-Gabrienzo/build/CMakeFiles/completer.dir

@@ -35,10 +35,10 @@ void Interface::imprimir(std::vector<std::pair<long,std::string>> resultados){
   //construção do menu
   clearScreen();
   std::cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << std::endl;
-  std::cout << "🟆 Resultados encontrados:" << std::endl;
+  std::cout << "Resultados encontrados:" << std::endl;
   //impressão dos resultados
   for(int i=0;i<resultados.size();i++){
-    std::cout << "▸" << ordenado[i] << " (" << (i+1) << ")" <<std::endl;
+    std::cout << "" << ordenado[i] << " (" << (i+1) << ")" <<std::endl;
   }
   std::cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << std::endl;
 }
